@@ -1,6 +1,3 @@
-# HackerRank
-# Problem: Hash Tables: Ransom Note
-
 #!/bin/python3
 
 import math
@@ -28,9 +25,12 @@ def checkMagazine(magazine, note):
         if item in mag:
             mag[item] -= 1
             if mag[item] < 0:
+                print('No')
                 return 'No'
         else:
+            print('No')
             return 'No'
+    print('Yes')
     return 'Yes'
 
         
